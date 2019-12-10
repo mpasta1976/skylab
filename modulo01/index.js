@@ -39,7 +39,7 @@ function checkUserInList(req, res, next) {
 
   req.user = user;
 
-  return next();
+  return next();      
 }
  
 server.get('/teste', (req, res) => {

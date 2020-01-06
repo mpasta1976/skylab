@@ -1,0 +1,10 @@
+{
+  "execMap": {
+    "js": "sucrase-node"
+  },
+  "ignore": [
+    "__tests__"
+  ]
+}
+
+//// A Edicao de um arquivo nao reinicia o nodemon quando as pastas abaixo

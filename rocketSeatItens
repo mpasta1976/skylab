@@ -1,0 +1,89 @@
+/********************************/
+SENTRY.IO
+/********************************/
+
+Error Handler
+
+	import sentryConfig from './config/sentry';
+
+Utilizando o Express, precisa utilizar a biblioteca abaixo para ele enviar os erros de metodos assincronos para o SENTRY
+
+	import 'express-async-errors';
+
+/********************************/
+YOUCH
+/********************************/
+
+Melhorar a visualizacao dos erros enviados para o SENTRY
+
+	yarn add youch
+
+DOTENV
+
+Carregar configuracao de arquivos .XXX de configuracao
+
+	yarn add dotenv
+
+
+/********************************/
+JEST
+/********************************/
+Plataforma de testes para a aplicacao
+
+	yarn add jest -D
+
+Inicializar o JEST
+
+	yarn jest --init
+
+PACOTE de sintaxe para o JEST
+
+	yarn add -D @types/jest  
+
+SUPERTEST 
+
+Usada para efetuar as chamadas de rotas em teste
+
+	yarn add supertest -D 
+
+/********************************/
+Gerar dados randomicos
+/********************************/
+FACTORY GIRL and FAKER
+
+	yarn add factory_girl faker -D
+
+/*********************************/
+
+DEPLOY DATA
+/*********************************/
+Digital Ocean
+
+Logar como ROOT com SSH. Maquina nova sempre executar
+
+	apt update
+	apt upgrade
+
+Apos finalizar, criar um novo usuario
+
+	adduser deploy (pode ser qualquer nome)
+
+Adicionar permissao para o usuario
+
+	usermod -aG sudo deploy
+
+Permitir SSH pelo usuario novo
+	
+	Criar pasta .ssh no novo usuario /home/<USER>
+
+Copiar as autorizacoes
+
+	cp ~/.ssh/authorized_keys .
+
+Alterar a permissao do arquivo para o novo usuario
+
+	chown deploy:deploy authorized_keys
+
+
+
+https://www.youtube.com/watch?v=MpsNF-EyytQ

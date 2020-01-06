@@ -1,0 +1,14 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon desafios/desafio01/index.js"
+  },
+  "dependencies": {
+    "@rocketseat/omni": "0.0.7",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "nodemon": "^1.19.3"
+  }
+}

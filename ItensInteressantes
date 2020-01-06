@@ -1,0 +1,25 @@
+Commandos Docker
+
+-- Verifica os logs de uma maquina
+docker logs <@NAMES@>
+docker logs Skylab
+
+-- Para uma maquina de forma abrupta --
+docker stop <@NAMES@>
+docker stop Skylab 
+
+-- Inicia um maquina --
+docker start <@NAMES@>
+docker start Skylab  
+
+--Configurar o sequelize
+yarn add sequelize  
+
+yarn add sequelize-cli -D
+
+-- Rodar migrations
+yarn sequelize db:migrate
+
+-- Down migrations
+yarn sequelize db:migrate:undo
+yarn sequelize db:migrate:undo:all

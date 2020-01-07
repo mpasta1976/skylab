@@ -4,8 +4,8 @@ module.exports = {
   dialect: 'postgres',
   host: 'localhost',
   username: 'postgres',
-  password: 'docker',
-  database: 'gobarber',
+  password: 'bootcamppostgres',
+  database: 'postgres',
   define: {
     // cria automaticamente uma coluna de criado e atualizado em todos as tabelas do banco de dados
     timestamps: true,

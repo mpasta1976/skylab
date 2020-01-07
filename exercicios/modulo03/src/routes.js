@@ -23,7 +23,7 @@ routes.get('/', (req, res) =>
   })
 );
 
-routes.get('/CI', (req, res) => res.send('Ok'));
+routes.get('/CI', (req, res) => res.send('Ok de nuevo'));
 
 routes.get('/debug-sentry', function mainHandler(req, res) {
   throw new Error('My first Sentry error!');

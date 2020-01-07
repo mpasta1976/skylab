@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import multer from 'multer';
 
-import multerConfig from './config/multer'
+import multerConfig from './config/multer';
 
 import User from './app/models/User';
 import UserController from './app/controllers/UserController';
@@ -23,6 +23,8 @@ routes.get('/', (req, res) =>
   })
 );
 
+routes.get('/CI', (req, res) => res.send('Ok'));
+
 routes.get('/debug-sentry', function mainHandler(req, res) {
   throw new Error('My first Sentry error!');
 });
@@ -30,7 +32,6 @@ routes.get('/debug-sentry', function mainHandler(req, res) {
 routes.post('/users', UserController.store);
 // SessionController - Criando sessao //
 routes.post('/sessions', SessionController.store);
-
 
 // Todos os itens para baixo usando a autenticacao//
 routes.use(authMiddleware);

@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "@rocketseat/omni": "0.0.7",
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "@types/jest": "^24.0.25",
